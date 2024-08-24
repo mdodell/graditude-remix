@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { LogoBlue } from "~/assets/LogoBlue";
-import { Welcome } from "~/components/Welcome/Welcome";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Mantine Remix App" },
@@ -8,11 +7,6 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
-  return (
-    <div>
-      <Welcome />
-      <LogoBlue />
-    </div>
-  );
+export default function RegisterPage() {
+  return <div>Register</div>;
 }
