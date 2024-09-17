@@ -1,0 +1,48 @@
+.backgroundImage {
+  background-position: bottom;
+  background-size: cover;
+  @mixin smaller-than $mantine-breakpoint-sm {
+    background-position: top;
+  }
+}
+
+.backgroundImageInner {
+  padding-bottom: 180px;
+  padding: var(--mantine-spacing-xl);
+  dispay: flex;
+
+  height: 400px;
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    height: 450px;
+  }
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    height: 500px;
+  }
+}
+
+.jumbotronContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jumbotronContentInner {
+  width: 90%;
+
+  @mixin larger-than $mantine-breakpoint-md {
+    width: 75%;
+  }
+}
+
+.jumbotronImageContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.jumbotronImageContainer > img {
+  object-fit: contain;
+}

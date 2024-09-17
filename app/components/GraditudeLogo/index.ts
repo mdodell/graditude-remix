@@ -1,0 +1,1 @@
+export { GraditudeLogo } from "./GraditudeLogo";

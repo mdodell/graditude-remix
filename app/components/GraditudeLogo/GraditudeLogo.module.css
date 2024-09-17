@@ -1,0 +1,14 @@
+.logo {
+  position: relative;
+  height: 64px;
+  width: 128px;
+}
+
+.logo > img {
+  &[data-path] {
+    cursor: pointer;
+  }
+
+  padding-top: var(--mantine-spacing-md);
+  object-fit: contain;
+}

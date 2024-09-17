@@ -1,0 +1,5 @@
+.subtitle {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: bold;
+}

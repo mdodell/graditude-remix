@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--mantine-spacing-md);
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: rem(8px) rem(12px);
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+
+  @mixin hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+  }
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 100%;
+    font-size: var(--mantine-font-size-lg);
+    padding: rem(12px);
+  }
+}
+
+.drawerBody {
+  height: 100%;
+}
+
+.drawer {
+  top: 100px;
+  height: 300px;
+}
+
+.loginButton {
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 100%;
+    margin: 0 var(--mantine-spacing-xs) var(--mantine-spacing-xs) var(--mantine-spacing-xs);
+  }
+}

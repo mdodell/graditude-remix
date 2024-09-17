@@ -1,0 +1,18 @@
+.root {
+  width: 75%;
+  margin: 0 auto;
+
+  & > * {
+    justify-content: space-between;
+    margin-bottom: var(--mantine-spacing-md);
+  }
+
+  & > :nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  @mixin smaller-than $mantine-breakpoint-md {
+    width: 90%;
+  }
+}
